@@ -135,7 +135,7 @@ h2 {
 }
 
 .profile #wrapper {
-    padding: 60px 40px 0px;
+    padding: 20px 40px 0px;
     max-width: 600px;
     margin: 0 auto;
 }
@@ -183,14 +183,14 @@ nav.main-nav a {
     top: 8px;
     right: 6px;
     padding: 8px 12px;
-    color: #5badf0;
+    color: #FC6600;
     font-size: 13px;
     line-height: 1.35;
     border-radius: 3px;
 }
 
 nav.main-nav a.cta {
-    background: #5badf0;
+    background: #FC6600;
     color: #fff;
     margin-left: 12px;
 }
@@ -207,7 +207,7 @@ nav.main-nav a.cta {
       top: 8px;
       right: 6px;
       padding: 8px 8px;
-      color: #5badf0;
+      color: #FC6600;
       font-size: 13px;
       line-height: 1.35;
       border-radius: 3px;
@@ -246,12 +246,12 @@ nav.main-nav a.cta {
 
 a, #title, #post-list a:hover, #title:hover {
     text-decoration: none;
-    color: #5badf0;
+    color: #FC6600;
     color: #5694f1;
 }
 
 p a {
-    color: #5694f1;
+    color: #FC6600;
 }
 
 
