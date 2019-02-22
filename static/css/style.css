@@ -247,7 +247,6 @@ nav.main-nav a.cta {
 a, #title, #post-list a:hover, #title:hover {
     text-decoration: none;
     color: #FC6600;
-    color: #5694f1;
 }
 
 p a {
@@ -798,14 +797,11 @@ h2.month {
 
 .archive .post-item {
     padding: 10px 0px;
-    overflow-x: hidden;
-    white-space:nowrap;
 }
 
 .archive .post-time {
     display: inline-block;
-    width: 60px;
-    margin: 0;
+    margin-right: 20px;
     color: #8a8a8a;
 }
 
@@ -819,7 +815,9 @@ h2.month {
 }
 
 .archive .post-link {
-    color: #8a8a8a;
+  color: #333;
+  display: block;
+  font: bold 19px/1.7 "Helvetica Neue", helvetica, Arial, sans-serif;
 }
 
 .archive .post-item:hover {
@@ -827,7 +825,13 @@ h2.month {
     transition: 0.3s ease-out;
 }
 .archive .post-item:hover .post-link {
-    color: #5694f1;
+    color: #FC6600;
+}
+
+.archive .post-item h2{
+  font: normal 17px/1.5em "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #aaa;
+  margin-top: 2px;
 }
 
 .fa.fa-heart:hover {
@@ -899,7 +903,7 @@ a.symbol:hover {
 }
 #TableOfContents a code{
   font-family: Menlo, Monaco, Courier;
-  background-color: #fff;
+  background-color: #696969;
   font-size: 11px;
   padding: 2px 3px;
   font-weight: 100;
@@ -931,4 +935,13 @@ a.symbol:hover {
 }
 .page-tags ul li a:hover {
     color: #5694f1;
+}
+
+.tags a {
+    color: #FFF;
+    background: #FC6600;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 4px 0px;
 }

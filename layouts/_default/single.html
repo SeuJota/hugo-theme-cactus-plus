@@ -1,7 +1,6 @@
 {{ partial "head.html" . }}
     <body>
        {{ partial "nav.html" . }}
-
         <section id="wrapper" class="post">
             <article>
                 <header>
@@ -9,9 +8,11 @@
                         {{ .Title }}
                     </h1>
                     <h2 class="headline">
-                    {{ .Date.Format "Jan 2, 2006 15:04" }}
-                    · {{ if lt 1 .WordCount }}{{ .WordCount }} words{{ else }}{{ .WordCount }} word{{ end }}
-                    · {{ .ReadingTime }} minute read
+                    {{ .Date.Format "02/01/2006 15:04" }}
+                    · {{ if lt 1 .WordCount }}{{ .WordCount }} palavras{{ else }}{{ .WordCount }} palavra{{ end }}
+                    · leitura em {{ .ReadingTime }} minutos
+
+                      <br /><br /><br />
                       <span class="tags">
                       {{ with .Params.tags }}
                       {{ if ge (len .) 1 }}
@@ -34,10 +35,6 @@
                     {{ .Content }}
                 </section>
             </article>
-
-            {{ if .Site.Params.enableShare }}
-                {{ partial "share.html" . }}
-            {{ end }}
 
             {{ if .Site.Params.enableDisqus }}
                 {{ partial "disqus.html" . }}
